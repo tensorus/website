@@ -1,0 +1,22 @@
+.docsContainer {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.docsContainer h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.docLinks {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.docLinks li {
+  margin: 0.5rem 0;
+}
+
+.docLinks a {
+  font-weight: 500;
+}
