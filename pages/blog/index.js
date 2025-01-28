@@ -7,28 +7,28 @@ const posts = [
     slug: 'introducing-tensorus',
     title: 'Introducing Tensorus',
     date: 'Jan 1, 2025',
-    excerpt: 'Meet the world’s first agentic tensor database, designed to power next-gen AI...'
+    excerpt: 'Meet the world’s first agentic tensor database, designed to power next-gen AI workflows.'
   },
   {
     slug: 'vision-agentic-tensors',
     title: 'Our Vision for Agentic Tensor Databases',
     date: 'Jan 8, 2025',
-    excerpt: 'Discover how Tensorus combines multi-dimensional data, agent orchestration, and AI...'
+    excerpt: 'Discover how Tensorus combines multi-dimensional data, AI agents, and open-source collaboration.'
   },
   {
     slug: 'roadmap-teaser-2025',
     title: 'Roadmap Teaser: What’s Next for Tensorus',
     date: 'Jan 15, 2025',
-    excerpt: 'We share our exciting plans for operator fusion, agent updates, and more in 2025...'
+    excerpt: 'From advanced operator fusion to agentic self-learning, see what we have planned for 2025 and beyond.'
   }
 ]
 
 export default function BlogIndex() {
   return (
     <Layout>
-      <section className={styles.blogContainer}>
+      <section className={styles.blogSection}>
         <h1>Tensorus Blog</h1>
-        <p>Weekly updates on agentic tensor databases, AI workflows, and more!</p>
+        <p>Your weekly updates on agentic tensor databases, AI workflows, and more!</p>
 
         <div className={styles.postList}>
           {posts.map(post => (

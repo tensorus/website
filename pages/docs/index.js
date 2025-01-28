@@ -5,10 +5,13 @@ import Link from 'next/link'
 export default function DocsIndex() {
   return (
     <Layout>
-      <section className={styles.docsContainer}>
+      <section className={styles.docsSection}>
         <h1>Tensorus Documentation</h1>
-        <p>Welcome to the official docs for Tensorus: Agentic Tensor Databases.</p>
-        <p>Choose a section below to learn more about Tensorus:</p>
+        <h2>Your Guide to Agentic Tensor Databases</h2>
+        <p>
+          Welcome to the official docs for Tensorus. Browse the sections below 
+          to learn how to set up, configure, and maximize your AI-powered database.
+        </p>
 
         <ul className={styles.docLinks}>
           <li>
