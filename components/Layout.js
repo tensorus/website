@@ -23,7 +23,7 @@ export default function Layout({ children }) {
       <main className={styles.main}>{children}</main>
 
       <footer className={styles.footer}>
-        <p>© {new Date().getFullYear()} Tensorus, Inc. All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} Tensorus. All Rights Reserved.</p>
       </footer>
     </div>
   )

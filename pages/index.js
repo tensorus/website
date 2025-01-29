@@ -1,5 +1,3 @@
-// pages/index.js
-
 import Layout from '@/components/Layout'
 import styles from '@/styles/Home.module.css'
 
@@ -9,8 +7,13 @@ export default function Home() {
       {/* HERO SECTION */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <h1 className={styles.title}>Imagine a Database That Thinks Like a Brain</h1>
-          <h2 className={styles.subtitle}>Where Data Evolves into Intelligence</h2>
+          {/* 1) Updated Title & Sub-Message */}
+          <h1 className={styles.title}>
+            Tensorus: The World’s First Agentic Tensor Database.
+          </h1>
+          {/* Ensure sub-message fits on one line by adjusting CSS or text length */}
+          <h2 className={styles.subtitle}>Imagine a Database That Thinks Like a Brain</h2>
+
           <p className={styles.bodyText}>
             We’re introducing Tensorus, a revolutionary way to store and use information.
             Forget traditional databases – Tensorus is powered by the same technology
@@ -18,6 +21,7 @@ export default function Home() {
             data isn’t just stored; it’s actively used to solve problems and make new
             discoveries. Tensorus is the world’s first open-source project powered by AI agents.
           </p>
+
           <div className={styles.ctaButtons}>
             <a href="/docs" className={styles.buttonPrimary}>Learn More</a>
             <a
@@ -32,18 +36,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 1: The Story Behind Tensorus */}
+      {/* 2) Revised: “Born from a Global Vision” → Highlight 혁신적인 Agentic Tensor DB */}
       <section className={styles.sectionBackground}>
         <div className={styles.section}>
-          <h1>Born from a Global Vision</h1>
-          <h2>From Global Inspiration to Open-Source Innovation</h2>
+          <h1>Introducing Our Agentic Tensor Database</h1>
+          <h2>Where Innovation Meets Intelligent Data Management</h2>
           <p>
-            Tensorus isn’t just a tech project; it’s a story. We were inspired by
-            experiences in London, ideas sparked in Vancouver, and refined through
-            testing in Paris. Now, we’re launching this open-source initiative
-            from Seattle (or New York) to share this technology with the world.
-            Our journey is rooted in the belief that data, when organized dynamically,
-            can unlock unprecedented possibilities.
+            Tensorus isn’t just another data platform—it’s a breakthrough in how we
+            handle multi-dimensional information. Our agentic approach turns every
+            piece of data into a proactive contributor to AI-driven insights.
+            By fusing advanced tensor operations with self-learning agents,
+            Tensorus redefines what’s possible in big data, analytics, and
+            real-time decision-making.
           </p>
         </div>
       </section>
@@ -125,15 +129,17 @@ export default function Home() {
         </p>
       </section>
 
-      {/* SECTION 6: Tensorus’ Brand Identity */}
+      {/* 3) Revised: “Where Tensors Meet Intelligence.” → Talk about AI & DB synergy */}
       <section className={styles.sectionBackground}>
         <div className={styles.section}>
-          <h1>Where Tensors Meet Intelligence.</h1>
+          <h1>Revolutionizing AI Through Tensors</h1>
           <p>
-            Our proposed slogan captures the essence of Tensorus. Visually, we’re
-            exploring a logo representing the multidimensional nature of tensors,
-            perhaps using 3D grids with data points or a neural network-style design.
-            This brand identity reflects our focus on AI-driven, multi-dimensional data solutions.
+            Tensorus seamlessly connects tensor-based data structures with the power
+            of autonomous AI agents. By bridging the gap between raw data
+            and intelligent models, Tensorus enables revolutionary progress in
+            deep learning, real-time analytics, and beyond. Experience a new paradigm
+            where your database is an active collaborator in AI-driven solutions,
+            constantly learning and evolving to meet tomorrow’s challenges.
           </p>
         </div>
       </section>
