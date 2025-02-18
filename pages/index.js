@@ -1,19 +1,26 @@
-import Layout from '@/components/Layout'
-import styles from '@/styles/Home.module.css'
+import React, { useState } from 'react';
+import Layout from '@/components/Layout';
+import VideoModal from '@/components/VideoModal';
+import styles from '@/styles/Home.module.css';
 
 export default function Home() {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
   return (
     <Layout>
       {/* HERO SECTION */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          {/* 1) Updated Title & Sub-Message */}
+          {/* Updated Title & Sub-Message */}
           <h1 className={styles.title}>
             Tensorus: The World’s First Agentic Tensor Database.
           </h1>
-          {/* Ensure sub-message fits on one line by adjusting CSS or text length */}
-          <h2 className={styles.subtitle}>Imagine a Database That Thinks Like a Brain</h2>
-
+          <h2 className={styles.subtitle}>
+            Imagine a Database That Thinks Like a Brain
+          </h2>
           <p className={styles.bodyText}>
             We’re introducing Tensorus, a revolutionary way to store and use information.
             Forget traditional databases – Tensorus is powered by the same technology
@@ -21,7 +28,6 @@ export default function Home() {
             data isn’t just stored; it’s actively used to solve problems and make new
             discoveries. Tensorus is the world’s first open-source project powered by AI agents.
           </p>
-
           <div className={styles.ctaButtons}>
             <a href="/docs" className={styles.buttonPrimary}>Learn More</a>
             <a
@@ -32,11 +38,14 @@ export default function Home() {
             >
               View on GitHub
             </a>
+            <button onClick={openModal} className={styles.buttonPrimary}>
+              Watch Demo
+            </button>
           </div>
         </div>
       </section>
 
-      {/* 2) Revised: “Born from a Global Vision” → Highlight 혁신적인 Agentic Tensor DB */}
+      {/* SECTION 1: Introducing Our Agentic Tensor Database */}
       <section className={styles.sectionBackground}>
         <div className={styles.section}>
           <h1>Introducing Our Agentic Tensor Database</h1>
@@ -129,7 +138,7 @@ export default function Home() {
         </p>
       </section>
 
-      {/* 3) Revised: “Where Tensors Meet Intelligence.” → Talk about AI & DB synergy */}
+      {/* SECTION 6: Revolutionizing AI Through Tensors */}
       <section className={styles.sectionBackground}>
         <div className={styles.section}>
           <h1>Revolutionizing AI Through Tensors</h1>
@@ -143,6 +152,9 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      {/* DEMO VIDEO MODAL */}
+      <VideoModal isOpen={isModalOpen} onClose={closeModal} videoId="lSjXQVsMMDE" />
     </Layout>
-  )
+  );
 }
