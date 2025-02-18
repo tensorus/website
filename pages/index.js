@@ -5,7 +5,6 @@ import styles from '@/styles/Home.module.css';
 
 export default function Home() {
   const [isModalOpen, setModalOpen] = useState(false);
-
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
 
@@ -14,7 +13,6 @@ export default function Home() {
       {/* HERO SECTION */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          {/* Updated Title & Sub-Message */}
           <h1 className={styles.title}>
             Tensorus: The World’s First Agentic Tensor Database.
           </h1>
@@ -38,7 +36,7 @@ export default function Home() {
             >
               View on GitHub
             </a>
-            <button onClick={openModal} className={styles.buttonPrimary}>
+            <button onClick={openModal} className={`${styles.buttonPrimary} ${styles.buttonHighlight}`}>
               Watch Demo
             </button>
           </div>
